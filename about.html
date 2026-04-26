@@ -107,20 +107,7 @@
 
     /* ── STORY SECTION ── */
     .story-section { background: var(--white); }
-    .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
-    .story-img {
-      background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
-      border-radius: 20px; aspect-ratio: 4/3;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      gap: 12px; color: rgba(255,255,255,0.35); font-size: 14px; position: relative; overflow: hidden;
-    }
-    .story-img i { font-size: 56px; color: rgba(59,130,246,0.4); }
-    .story-img-badge {
-      position: absolute; bottom: 20px; left: 20px;
-      background: rgba(59,130,246,0.9); color: white;
-      padding: 10px 18px; border-radius: 8px;
-      font-size: 13px; font-weight: 600;
-    }
+    .story-grid { display: grid; grid-template-columns: 1fr; gap: 72px; align-items: center; }
     .story-text p { font-size: 15px; color: var(--gray); line-height: 1.8; margin-bottom: 16px; }
     .story-text p:first-of-type { font-size: 17px; color: var(--navy); font-weight: 500; }
 
@@ -226,7 +213,6 @@
     @media (max-width: 900px) {
       .nav-links, .nav-cta { display: none; }
       .hamburger { display: flex; }
-      .story-grid { grid-template-columns: 1fr; }
       .spec-grid { grid-template-columns: 1fr; }
       .mv-grid { grid-template-columns: 1fr; }
       .quick-stats-grid { grid-template-columns: repeat(2, 1fr); }
@@ -301,12 +287,6 @@
 <section class="story-section">
   <div class="container">
     <div class="story-grid">
-      <div class="story-img fade-up">
-        <i class="fas fa-industry"></i>
-        <span>Facility Photo</span>
-        <span style="font-size:11px;">[ Replace with actual image ]</span>
-        <div class="story-img-badge">📍 Jhotwara, Jaipur</div>
-      </div>
       <div class="fade-up">
         <div class="section-label">Our Story</div>
         <h2 class="section-title">From Jaipur to<br>Every Corner of India</h2>
